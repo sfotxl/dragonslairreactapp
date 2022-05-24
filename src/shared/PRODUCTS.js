@@ -8,6 +8,7 @@ import colbyImg from "../assets/img/colby.jpeg";
 import mozzImg from "../assets/img/packagedcheese.jpeg";
 import pepperJackImg from "../assets/img/pepperjack.jpeg";
 import cheddarImg from "../assets/img/cheddar.jpeg";
+import sockeyeImg from "../assets/img/sockeye.jpg";
 
 export const PRODUCTS = [
   {
@@ -18,7 +19,7 @@ export const PRODUCTS = [
       "Every piece of jerky gets slow smoked in a variety of hardwoods that include Mesquite, Hickory, Alder, and Apple. Our jerky comes in portions of 5lbs and is made weekly.",
     process:
       "We start with the finest Local Grass-Fed Texas Beef: Eye of the Round, to be exact. This beef is super lean and makes for a jerky unlike ANY you've ever tried.",
-    type: "top",
+    type: "category",
     price: "$10.00",
     portion: "4 ounces",
     seasonal: false,
@@ -29,7 +30,7 @@ export const PRODUCTS = [
     image: cheeseImg,
     description:
       "All of our cheese is the highest quality and smoked with Applewood. Our cheeses come in 4oz portions, and all cheese are $5.00.",
-    type: "top",
+    type: "category",
     price: "$5.00",
     portion: "4 ounces",
     seasonal: false,
@@ -40,7 +41,9 @@ export const PRODUCTS = [
     image: salmonImg,
     description:
       "Freshly smoked wild caught Alaskan Sockeye and Coho salmon (type depends on season). Portions are 7oz for $10.00. (All orders require a 3-day minimum advance notice.)",
-    type: "top",
+    process:
+      "We brine the salmon for several hours to prepare it for smoking in a secret solution to help remove some of them moisture. The fish then forms a pellicle, a type of barrier and case on the outside, when its ready for smoking.",
+    type: "category",
     price: "$10.00",
     portion: "7 ounces",
     seasonal: false,
@@ -127,5 +130,25 @@ export const PRODUCTS = [
     price: "$10.00",
     portion: "4 ounces",
     seasonal: true,
+  },
+  {
+    id: 11,
+    name: "Alaskan Sockeye",
+    image: sockeyeImg,
+    description: "Wild caught Alaskan sockeye smoked weekly and on-demand",
+    type: "salmon",
+    price: "$10.00",
+    portion: "7 ounces",
+    seasonal: false,
+  },
+  {
+    id: 12,
+    name: "Coho",
+    image: "",
+    description: "Coho salmon",
+    type: "salmon",
+    price: "10.00",
+    portion: "7 ounces",
+    seaonal: true,
   },
 ];

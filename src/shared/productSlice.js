@@ -16,23 +16,3 @@ export const selectTopProducts = () => {
 export const selectSeasonalProducts = () => {
   return PRODUCTS.filter((product) => product.seasonal);
 };
-
-//selector for Jerky -- this function selects Jerky products
-export const selectJerky = () => {
-  return PRODUCTS.filter(
-    (product) => !product.seasonal && product.type === "jerky"
-  );
-};
-
-//selector for Cheese -- this function selects Cheese products
-export const selectCheese = () => {
-  return PRODUCTS.filter(
-    (product) => !product.seasonal && product.type === "cheese"
-  );
-};
-
-export const selectSalmon = () => {
-  return PRODUCTS.filter(
-    (product) => !product.seasonal && product.type === "salmon"
-  );
-};

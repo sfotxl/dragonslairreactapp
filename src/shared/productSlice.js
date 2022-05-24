@@ -7,9 +7,9 @@ export const selectProductsByType = (type) => {
   );
 };
 
-//selector for Top / Category of Products -- this function returns the categories of products for the Products Page
-export const selectTopProducts = () => {
-  return PRODUCTS.filter((product) => product.type === "top");
+//selector for Category of Products -- this function returns the categories of products for the Products Page
+export const selectCategories = () => {
+  return PRODUCTS.filter((product) => product.type === "category");
 };
 
 //selector for Seasonal Products -- this function returns Seasonal Products only
@@ -31,6 +31,7 @@ export const selectCheese = () => {
   );
 };
 
+//selector for Salmon -- this function selects salmon products
 export const selectSalmon = () => {
   return PRODUCTS.filter(
     (product) => !product.seasonal && product.type === "salmon"

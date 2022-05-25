@@ -1,5 +1,13 @@
+import { Container } from "reactstrap";
+import SubHeader from "../components/SubHeader";
+
 const HealthPage = () => {
-    return <div>Health Page</div>
-}
+  return (
+    <Container>
+      <SubHeader current="Health" />
+      Health Page
+    </Container>
+  );
+};
 
 export default HealthPage;

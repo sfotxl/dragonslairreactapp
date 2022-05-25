@@ -3,5 +3,14 @@ import ContactForm from '../components/ContactForm'
 const ContactPage = () => {
     return <ContactForm />
 }
+=======
+import { Container } from "reactstrap";
+import SubHeader from "../components/SubHeader";
 
-export default ContactPage
+const ContactPage = () => {
+  return (
+    <Container>
+      <SubHeader current="Contact" />
+    </Container>
+  );
+};

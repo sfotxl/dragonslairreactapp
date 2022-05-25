@@ -21,11 +21,11 @@ test(
     }
 )
 
-// Test that selectTopProducts returns an array containing objects with type: "top"
+// Test that selectCategories returns an array containing objects with type: "category"
 test(
-    "selects top products",
+    "selects categories",
     () => {
-        const top = productSlice.selectTopProducts();
-        expect(top.length).toBe(3);
+        const categories = productSlice.selectCategories();
+        expect(categories.length).toBe(3);
     }
 )

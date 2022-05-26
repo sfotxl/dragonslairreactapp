@@ -1,61 +1,70 @@
-import { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
-import DragonLogo from "../assets/img/logo.jpg";
-import { Navbar, NavbarBrand, Nav, NavItem} from 'reactstrap';
+// import { useState } from "react";
+import { NavLink } from 'react-router-dom';
+import DragonLogo from '../assets/img/DragonLairLogos.png';
+import {
+  Navbar,
+  NavbarBrand,
+  Collapse,
+  NavbarToggler,
+  Nav,
+  NavItem
+} from 'reactstrap';
+import { useState } from 'react';
 
 const Header = () => {
- 
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <Navbar sticky='top'>
-      <NavbarBrand href='/'>
-        <img src={DragonLogo} alt='Dragons Lair Logo'/>
+    <Navbar className='navbar' dark sticky='top' expand='md' color='dark'>
+      <NavbarBrand href='/' className='ms-5'>
+        <img
+          src={DragonLogo}
+          alt='Dragons Lair Logo'
+          className='rounded-pill img-fluid'
+        />
       </NavbarBrand>
-      <Nav>
-          <NavLink to='/products'>
-            Products
-          </NavLink> 
-          <NavLink to='/'>
-            <i className='fa fa-dragon fa-lg'/>Home
-          </NavLink>
-      </Nav>
+
+      <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
+      <Collapse isOpen={menuOpen} navbar>
+        <Nav className='ms-auto' navbar>
+          <NavItem>
+            <NavLink className='nav-link' to='/'>
+              <i className='fa fa-home fa-lg' aria-hidden='true' /> Home
+            </NavLink>
+          </NavItem>
+
+          <NavItem>
+            <NavLink className='nav-link' to='/about'>
+              <i className='fa fa-address-card fa-lg' /> About
+            </NavLink>
+          </NavItem>
+
+          <NavItem>
+            <NavLink className='nav-link' to='/products'>
+              <i className='fa fa-cutlery fa-lg' /> Product
+            </NavLink>
+          </NavItem>
+
+          <NavItem>
+            <NavLink className='nav-link' to='/health'>
+              <i className='fa fa-heartbeat fa-lg' /> Health
+            </NavLink>
+          </NavItem>
+
+          <NavItem>
+            <NavLink className='nav-link' to='/vendor'>
+              <i className='fa fa-shopping-bag fa-lg' /> Vendor
+            </NavLink>
+          </NavItem>
+
+          <NavItem>
+            <NavLink className='nav-link' to='/contact'>
+              <i className='fa fa-address-book' /> Contact
+            </NavLink>
+          </NavItem>
+        </Nav>
+      </Collapse>
     </Navbar>
-    // <Navbar sticky="top" color="primary">
-    //   <NavbarBrand href="/">
-    //     <img src={DragonLogo} alt="Dragons Lair logo" />
-    //     <h1>Dragons Lair Smoked Fine Goods</h1>
-    //   </NavbarBrand>
-    //     <Nav navbar>
-    //       <NavItem>
-    //         <NavLink to="/">
-    //           <i className="fa fa-dragon fa-lg" /> Home
-    //         </NavLink>
-    //       </NavItem>
-    //       <NavItem>
-    //         <NavLink className="nav-link" to="/products">
-    //           <i className="fa fa-drumstick-bite fa-lg" /> Products
-    //         </NavLink>
-    //       </NavItem>
-    //       <NavItem>
-    //         <NavLink className="nav-link" to="/health">
-    //           <i className="fa fa-briefcase-medical fa-lg" />
-    //           Health
-    //         </NavLink>
-    //       </NavItem>
-    //       <NavItem>
-    //         <NavLink className="nav-link" to="/about">
-    //           <i className="fa fa-person-hiking fa-lg" />
-    //           About
-    //         </NavLink>
-    //       </NavItem>
-    //       <NavItem>
-    //         <NavLink className="nav-link" to="/contact">
-    //           <i className="fa fa-address-card fa-lg" />
-    //           Contact
-    //         </NavLink>
-    //       </NavItem>
-    //     </Nav>
-    // </Navbar>
-  
   );
 };
 

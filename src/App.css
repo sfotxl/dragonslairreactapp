@@ -7,7 +7,12 @@
 h1,
 h2,
 h3,
+i,
 .card-body > .card-title {
   font-family: 'Aladin', cursive;
   text-align: center;
+  color: red;
+}
+.navbar .navbar-toggler {
+  color: red !important;
 }

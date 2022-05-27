@@ -17,6 +17,9 @@ const Header = () => {
           <NavLink to='/'>
             <i className='fa fa-dragon fa-lg'/>Home
           </NavLink>
+          <NavLink to='/contact'>
+              Contact
+          </NavLink>
       </Nav>
     </Navbar>
     // <Navbar sticky="top" color="primary">

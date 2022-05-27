@@ -1,6 +1,6 @@
 // import { useState } from "react";
 import { NavLink } from 'react-router-dom';
-import DragonLogo from '../assets/img/DragonLairLogos.png';
+import DragonLogo from '../assets/img/smokedgoodslogo.png';
 import {
   Navbar,
   NavbarBrand,
@@ -27,11 +27,6 @@ const Header = () => {
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse isOpen={menuOpen} navbar>
         <Nav className='ms-auto' navbar>
-          <NavItem>
-            <NavLink className='nav-link' to='/'>
-              <i className='fa fa-home fa-lg' aria-hidden='true' /> Home
-            </NavLink>
-          </NavItem>
 
           <NavItem>
             <NavLink className='nav-link' to='/about'>
@@ -41,19 +36,13 @@ const Header = () => {
 
           <NavItem>
             <NavLink className='nav-link' to='/products'>
-              <i className='fa fa-cutlery fa-lg' /> Product
+              <i className='fa fa-cutlery fa-lg' /> Products
             </NavLink>
           </NavItem>
 
           <NavItem>
             <NavLink className='nav-link' to='/health'>
               <i className='fa fa-heartbeat fa-lg' /> Health
-            </NavLink>
-          </NavItem>
-
-          <NavItem>
-            <NavLink className='nav-link' to='/vendor'>
-              <i className='fa fa-shopping-bag fa-lg' /> Vendor
             </NavLink>
           </NavItem>
 

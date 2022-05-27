@@ -7,12 +7,24 @@
 h1,
 h2,
 h3,
+h5,
+a,
 i,
 .card-body > .card-title {
   font-family: 'Aladin', cursive;
   text-align: center;
-  color: red;
+  color: darkred;
 }
 .navbar .navbar-toggler {
-  color: red !important;
+  color: darkred !important;
+}
+
+.site-footer {
+  background-image: linear-gradient(black, slategrey);
+  padding: 20px 0;
+  margin-top: 5rem;
+}
+
+.footer-links{
+  color: goldenrod;
 }

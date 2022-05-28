@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import { NavLink } from 'react-router-dom';
-import DragonLogo from '../assets/img/smokedgoodslogo.png';
+import { ReactComponent as DragonLogoText } from '../assets/img/dragonslairlogo.svg';
+import DragonLogo from '../assets/img/logo.jpg';
 import {
   Navbar,
   NavbarBrand,
@@ -16,18 +17,18 @@ const Header = () => {
 
   return (
     <Navbar className='navbar' dark sticky='top' expand='md' color='dark'>
-      <NavbarBrand href='/' className='ms-5'>
-        <img
-          src={DragonLogo}
-          alt='Dragons Lair Logo'
-          className='rounded-pill img-fluid'
-        />
+      <NavbarBrand href='/' xs='3' md='5' className='ms-5'>
+        <div id='BrandLogoContainer'>
+          <img src={DragonLogo} id='DragonLogoImg' />
+          <div class='svg-container'>
+            <DragonLogoText id='DragonLogoText' />
+          </div>
+        </div>
       </NavbarBrand>
 
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse isOpen={menuOpen} navbar>
         <Nav className='ms-auto' navbar>
-
           <NavItem>
             <NavLink className='nav-link' to='/about'>
               <i className='fa fa-address-card fa-lg' /> About
@@ -48,7 +49,7 @@ const Header = () => {
 
           <NavItem>
             <NavLink className='nav-link' to='/contact'>
-              <i className='fa fa-address-book' /> Contact
+              <i className='fa fa-address-book'></i> Contact
             </NavLink>
           </NavItem>
         </Nav>

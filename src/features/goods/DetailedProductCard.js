@@ -1,7 +1,7 @@
-import { Card, CardBody, CardTitle, CardImg } from "reactstrap";
+import { Card, CardImg } from "reactstrap"
 
-const DetailedProductCard = () => {
-    return <div>Detailed Good Card</div>
+const ProductCard = () => {
+    return <div>GoodCard</div>
 }
 
-export default DetailedProductCard;
+export default ProductCard;

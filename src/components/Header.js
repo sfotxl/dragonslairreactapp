@@ -1,7 +1,6 @@
 // import { useState } from "react";
 import { NavLink } from 'react-router-dom';
-import { ReactComponent as DragonLogoText } from '../assets/img/dragonslairlogo.svg';
-import DragonLogo from '../assets/img/logo.jpg';
+import DragonLogo from '../assets/img/smokedgoodslogo.png';
 import {
   Navbar,
   NavbarBrand,
@@ -17,18 +16,18 @@ const Header = () => {
 
   return (
     <Navbar className='navbar' dark sticky='top' expand='md' color='dark'>
-      <NavbarBrand href='/' xs='3' md='5' className='ms-5'>
-        <div id='BrandLogoContainer'>
-          <img src={DragonLogo} id='DragonLogoImg' />
-          <div class='svg-container'>
-            <DragonLogoText id='DragonLogoText' />
-          </div>
-        </div>
+      <NavbarBrand href='/' className='ms-5'>
+        <img
+          src={DragonLogo}
+          alt='Dragons Lair Logo'
+          className='rounded-pill img-fluid'
+        />
       </NavbarBrand>
 
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse isOpen={menuOpen} navbar>
         <Nav className='ms-auto' navbar>
+
           <NavItem>
             <NavLink className='nav-link' to='/about'>
               <i className='fa fa-address-card fa-lg' /> About

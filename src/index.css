@@ -1,3 +1,6 @@
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +14,59 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+/* START Dragon's Lair Logo styling */
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+#DragonsLairLogo {
+    font-family: 'New Rocker', cursive;
+    font-size: 3rem;
+    color: #880015;
+    -webkit-text-stroke: 0.06rem #ffc90e;
+    text-shadow: 0.1rem 0 0 #ffc90e;
+}
+
+#BrandLogoContainer {
+    display: grid;
+    height: 6rem;
+    width: 30rem;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 100%;
+    gap: 1.5rem;
+}
+
+#DragonLogoImg {
+    height: 5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.svg-container { 
+	display: inline-block;
+	position: relative;
+    margin-top: 1rem;
+	width: 100%;
+    height: 6rem;
+	vertical-align: middle; 
+	overflow: hidden; 
+}
+
+#DragonLogoText { 
+    display: inline-block;
+	position: absolute;
+    vertical-align: middle;
+	top: 0;
+	left: 0;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 576px) {
+    #BrandLogoContainer {
+        transform: scale(0.7) translateX(-20%);
+    }
+}
+/* END Dragon's Lair Logo styling */

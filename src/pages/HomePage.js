@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <Container>
       <video src={Sizzle} width="100%" muted loop autoPlay />
-      <h1>Welcome to Dragons Lair</h1>
+      <h1 className="mt-1">Welcome to Dragons Lair</h1>
     </Container>
   );
 };

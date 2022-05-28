@@ -1,4 +1,4 @@
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 
 const Footer = () => {
@@ -8,29 +8,29 @@ const Footer = () => {
         <Row>
           <Col xs={{ size: 2, offset: 1 }} sm='3'>
             <h5>Links</h5>
-            <a role='button' className='btn btn-link text-decoration-none ' href='/home'>
+            <Link role='button' className='btn btn-link text-decoration-none ' to='/home'>
               <i className='fa fa-home fa-lg' /> <p className='footer-links '>Home</p>
-            </a>
+            </Link>
 
-            <a role='button' className='btn btn-link text-decoration-none ' href='/about'>
+            <Link role='button' className='btn btn-link text-decoration-none ' to='/about'>
               <i className='fa fa-address-card fa-lg' /><p className='footer-links '>About</p>
-            </a>
+            </Link>
 
-            <a role='button' className='btn btn-link text-decoration-none ' href='/products'>
+            <Link role='button' className='btn btn-link text-decoration-none ' to='/products'>
               <i className='fa fa-cutlery fa-lg' /> <p className='footer-links '>Products</p>
-            </a>
+            </Link>
 
-            <a role='button' className='btn btn-link text-decoration-none ' href='/health'>
+            <Link role='button' className='btn btn-link text-decoration-none ' to='/health'>
               <i className='fa fa-heartbeat fa-lg' /> <p className='footer-links '>Health</p>
-            </a>
+            </Link>
 
-            <a role='button' className='btn btn-link text-decoration-none ' href='/vendor'>
+            <Link role='button' className='btn btn-link text-decoration-none ' to='/vendor'>
               <i className='fa fa-usd fa-lg' /> <p className='footer-links '>Vendor Info</p>
-            </a>
+            </Link>
 
-            <a role='button' className='btn btn-link text-decoration-none ' href='/contact'>
+            <Link role='button' className='btn btn-link text-decoration-none ' to='/contact'>
               <i className='fa fa-address-book fa-lg' /> <p className='footer-links '>Contact Us</p>
-            </a>
+            </Link>
           </Col>
 
           <Col xs='6' sm='3' className='text-center'>

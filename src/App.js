@@ -12,7 +12,7 @@ import VendorPage from "./pages/VendorPage";
 
 function App() {
   return (
-    <BrowserRouter>
+        <div className="App">
         <Header />
           <Routes>
               <Route path="/" element={<HomePage />} />
@@ -23,7 +23,7 @@ function App() {
                 <Route path="/contact" element={<ContactPage />} />
           </Routes>
         <Footer />
-    </BrowserRouter>
+        </div>
   );
 };
 

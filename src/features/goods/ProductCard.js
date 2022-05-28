@@ -1,7 +1,7 @@
 import { Card, CardImg } from "reactstrap"
 
-const GoodCard = () => {
+const ProductCard = () => {
     return <div>GoodCard</div>
 }
 
-export default GoodCard;
+export default ProductCard;

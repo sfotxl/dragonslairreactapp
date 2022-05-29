@@ -19,6 +19,7 @@ i,
   color: darkred !important;
 }
 
+
 .site-footer {
   background-image: linear-gradient(black, slategrey);
   padding: 20px 0;
@@ -27,4 +28,27 @@ i,
 
 .footer-links{
   color: goldenrod;
+}
+
+.firstCard {
+  background-color: rgb(128, 17, 0);
+  color: white;
+  
+}
+
+.secondCard {
+  background-color: #D73502;
+  color: white;
+}
+
+.thirdCard {
+  background-color: #FAC000;
+  color: white;
+
+}
+
+.fourthCard {
+  background-color: #FF7500;
+  color: white;
+
 }

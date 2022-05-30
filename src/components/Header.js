@@ -11,6 +11,8 @@ import {
   NavItem
 } from 'reactstrap';
 import { useState } from 'react';
+import { FaDrumstickBite } from "react-icons/fa";
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,7 +39,7 @@ const Header = () => {
 
           <NavItem>
             <NavLink className='nav-link' to='/products'>
-              <i className='fa fa-cutlery fa-lg' /> Products
+              <i className='fa fa-lg'><FaDrumstickBite/></i> Products
             </NavLink>
           </NavItem>
 

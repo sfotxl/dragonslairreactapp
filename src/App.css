@@ -15,10 +15,10 @@ i,
   text-align: center;
   color: darkred;
 }
+
 .navbar .navbar-toggler {
   color: darkred !important;
 }
-
 
 .site-footer {
   background-image: linear-gradient(black, slategrey);
@@ -26,29 +26,26 @@ i,
   margin-top: 5rem;
 }
 
-.footer-links{
+.footer-links {
   color: goldenrod;
 }
 
 .firstCard {
   background-color: rgb(128, 17, 0);
   color: white;
-  
 }
 
 .secondCard {
-  background-color: #D73502;
+  background-color: #d73502;
   color: white;
 }
 
 .thirdCard {
-  background-color: #FAC000;
+  background-color: #fac000;
   color: white;
-
 }
 
 .fourthCard {
-  background-color: #FF7500;
+  background-color: #ff7500;
   color: white;
-
 }

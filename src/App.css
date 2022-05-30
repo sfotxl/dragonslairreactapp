@@ -26,11 +26,31 @@ i,
   margin-top: 5rem;
 }
 
-.footer-links{
+.footer-links {
   color: goldenrod;
 }
 
 .featuredImage {
   border: solid 1px white;
   margin-bottom: 1rem;
+}
+
+.firstCard {
+  background-color: rgb(128, 17, 0);
+  color: white;
+}
+
+.secondCard {
+  background-color: #d73502;
+  color: white;
+}
+
+.thirdCard {
+  background-color: #fac000;
+  color: white;
+}
+
+.fourthCard {
+  background-color: #ff7500;
+  color: white;
 }

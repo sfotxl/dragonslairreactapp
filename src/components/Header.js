@@ -21,7 +21,7 @@ const Header = () => {
     <Navbar className='navbar' dark sticky='top' expand='md' color='dark'>
       <NavbarBrand href='/' xs='3' md='5' className='ms-5'>
         <div id='BrandLogoContainer'>
-          <img src={DragonLogo} id='DragonLogoImg' />
+          <img src={DragonLogo} id='DragonLogoImg' alt="DragonLogoImg" />
           <div class='svg-container'>
             <DragonLogoText id='DragonLogoText' />
           </div>

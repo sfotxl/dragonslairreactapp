@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
+import { FaDrumstickBite } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
             </Link>
 
             <Link role='button' className='btn btn-link text-decoration-none ' to='/products'>
-              <i className='fa fa-cutlery fa-lg' /> <p className='footer-links '>Products</p>
+              <i className='fa fa-lg'><FaDrumstickBite/></i> <p className='footer-links '>Products</p>
             </Link>
 
             <Link role='button' className='btn btn-link text-decoration-none ' to='/health'>

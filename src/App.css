@@ -30,6 +30,11 @@ i,
   color: goldenrod;
 }
 
+.featuredImage {
+  border: solid 1px white;
+  margin-bottom: 1rem;
+}
+
 .firstCard {
   background-color: rgb(128, 17, 0);
   color: white;

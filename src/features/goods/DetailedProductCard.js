@@ -4,7 +4,7 @@ const ProductDetail = ({ product }) => {
   const { image, name, description } = product;
 
   return (
-    <Card>
+    <Card className='text-dark'>
       <CardImg top src={image} alt={name} />
       <CardBody>
         <CardText>{description}</CardText>

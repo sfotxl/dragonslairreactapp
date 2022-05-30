@@ -12,7 +12,7 @@ import VendorPage from "./pages/VendorPage";
 
 function App() {
   return (
-        <div className="App bg-dark">
+        <div className="App bg-dark text-light">
         <Header />
           <Routes>
               <Route path="/" element={<HomePage />} />

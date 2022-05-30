@@ -7,13 +7,26 @@
 h1,
 h2,
 h3,
-h5,
-a,
-i,
-.card-body > .card-title {
+h4,
+h5 {
   font-family: 'Aladin', cursive;
   text-align: center;
   color: darkred;
+}
+
+.nav-link, .footer-title, .footer-links {
+  font-family: 'Aladin', cursive;
+  text-align: center;
+  color: darkred;
+}
+
+/* Icon Colors */
+i {
+  color: darkred;
+}
+
+.footer-title {
+  font-size: 1.25rem;
 }
 
 .navbar .navbar-toggler {
@@ -35,6 +48,7 @@ i,
   margin-bottom: 1rem;
 }
 
+/* Products Titles */
 .firstCard {
   background-color: rgb(128, 17, 0);
   color: white;

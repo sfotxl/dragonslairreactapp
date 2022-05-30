@@ -15,6 +15,7 @@ i,
   text-align: center;
   color: darkred;
 }
+
 .navbar .navbar-toggler {
   color: darkred !important;
 }
@@ -27,4 +28,9 @@ i,
 
 .footer-links{
   color: goldenrod;
+}
+
+.featuredImage {
+  border: solid 1px white;
+  margin-bottom: 1rem;
 }

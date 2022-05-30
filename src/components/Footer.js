@@ -4,7 +4,7 @@ import { FaDrumstickBite } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className='site-footer text-center text-md-start mt-5'>
+    <footer className='site-footer text-center text-md-start mt-0'>
       <Container>
         <Row className='mt-3'>
           <Col

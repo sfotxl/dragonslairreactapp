@@ -12,8 +12,9 @@ code {
     monospace;
 }
 
-* {
-  box-sizing: border-box;
+#form-radio-group {
+    display: flex;
+    flex-direction: row;
 }
 
 /* START Dragon's Lair Logo styling */

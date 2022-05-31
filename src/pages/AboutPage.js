@@ -6,10 +6,9 @@ const AboutPage = () => {
   return (
     <Container>
       <SubHeader current='About' />
-      <h1 className='text-center secondCard text-white'>
+      <h1 className='text-center secondCard text-white mb-3'>
         About Dragons Lair Smoked Fine Goods
       </h1>
-      <hr />
       <Row className='align-items-center'>
         <Col xs={12} xl={6}>
           <img

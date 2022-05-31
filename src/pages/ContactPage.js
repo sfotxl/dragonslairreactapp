@@ -6,6 +6,7 @@ const ContactPage = () => {
   return (
     <Container>
       <SubHeader current='Contact' />
+      <h1 className='text-center text-white fourthCard'>Contact Us</h1>
       <ContactForm />
     </Container>
   );

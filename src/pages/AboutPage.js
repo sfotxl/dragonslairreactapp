@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <Container>
       <SubHeader current='About' />
-      <h1 className='text-center text-white'>
+      <h1 className='text-center secondCard text-white'>
         About Dragons Lair Smoked Fine Goods
       </h1>
       <hr />

@@ -27,12 +27,12 @@ const PageContainer = ({ children }) => {
       <span ref={headerRef} className='wrapper'>
         <Header />
       </span>
-      <div
-        className='w-100 mx-auto d-flex flex-column '
+      <main
+        className='w-100 mx-auto d-flex flex-column my-3'
         style={calcContentHeight}
       >
         {children}
-      </div>
+      </main>
       <span ref={footerRef} className='wrapper'>
         <Footer />
       </span>

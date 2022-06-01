@@ -6,7 +6,9 @@ import {
   FaAddressCard,
   FaHeartbeat,
   FaAddressBook,
-  FaFacebookF
+  FaFacebookF,
+  FaPhone,
+  FaRegEnvelope
 } from 'react-icons/fa';
 import { MdAttachMoney } from 'react-icons/md';
 import { AiFillInstagram } from 'react-icons/ai';
@@ -50,9 +52,7 @@ const Footer = () => {
                     className='text-decoration-none  p-1 d-flex align-items-center justify-content-center'
                     to='/products'
                   >
-                    <i className='fa fa-lg px-1'>
-                      <FaDrumstickBite className='react-icons' />
-                    </i>
+                    <FaDrumstickBite size='32' className='react-icons px-1' />
                     <span className='link-warning px-1'>Products</span>
                   </Link>
                 </Col>
@@ -108,15 +108,17 @@ const Footer = () => {
                 className='text-decoration-none text-nowrap'
                 href='tel:+12065551234'
               >
-                <i className='fa fa-phone px-2' />
+                <FaPhone size='32' className='react-icons px-2' />
                 <span className='link-warning px-1'>(206) 555-1234</span>
               </a>
               <a
                 className='text-decoration-none text-nowrap'
                 href='mailto:dragonslairjerky@gmail.com'
               >
-                <i className='fa fa-envelope-o px-2' />
-                <span className='link-warning px-1'>dragonslairjerky@gmail.com</span>
+                <FaRegEnvelope size='32' className='react-icons px-2' />
+                <span className='link-warning px-1'>
+                  dragonslairjerky@gmail.com
+                </span>
               </a>
             </section>
           </Col>

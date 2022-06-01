@@ -11,8 +11,18 @@ import {
   NavItem
 } from 'reactstrap';
 import { useState } from 'react';
-import { FaDrumstickBite } from "react-icons/fa";
-
+import {
+  FaDrumstickBite,
+  FaHome,
+  FaAddressCard,
+  FaHeartbeat,
+  FaAddressBook,
+  FaFacebookF,
+  FaPhone,
+  FaRegEnvelope
+} from 'react-icons/fa';
+import { MdAttachMoney } from 'react-icons/md';
+import { AiFillInstagram } from 'react-icons/ai';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,7 +31,7 @@ const Header = () => {
     <Navbar className='navbar' dark sticky='top' expand='md' color='dark'>
       <NavbarBrand href='/' xs='3' md='5' className='ms-5'>
         <div id='BrandLogoContainer'>
-          <img src={DragonLogo} id='DragonLogoImg' alt="DragonLogoImg" />
+          <img src={DragonLogo} id='DragonLogoImg' alt='DragonLogoImg' />
           <div class='svg-container'>
             <DragonLogoText id='DragonLogoText' />
           </div>
@@ -33,25 +43,26 @@ const Header = () => {
         <Nav className='ms-auto' navbar>
           <NavItem>
             <NavLink className='nav-link' to='/about'>
-              <i className='fa fa-address-card fa-lg' /> About
+              <FaAddressCard size='28' className='react-icons px-1' /> About
             </NavLink>
           </NavItem>
 
           <NavItem>
             <NavLink className='nav-link' to='/products'>
-              <i className='fa fa-lg'><FaDrumstickBite/></i> Products
+              <FaDrumstickBite size='28' className='react-icons px-1' />
+              Products
             </NavLink>
           </NavItem>
 
           <NavItem>
             <NavLink className='nav-link' to='/health'>
-              <i className='fa fa-heartbeat fa-lg' /> Health
+              <FaHeartbeat size='28' className='react-icons px-1' /> Health
             </NavLink>
           </NavItem>
 
           <NavItem>
             <NavLink className='nav-link' to='/contact'>
-              <i className='fa fa-address-book'></i> Contact
+              <FaAddressBook size='24' className='react-icons px-1' /> Contact
             </NavLink>
           </NavItem>
         </Nav>

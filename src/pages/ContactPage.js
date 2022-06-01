@@ -30,7 +30,7 @@ const ContactPage = () => {
             id='iconic'
             href='tel:+13109489318'
           >
-            <FaPhone className='fs-1 me-2' />
+            <FaPhone color={'darkRed'} className='fs-1 me-2' />
           </a>
           1-310-948-9318
           <br className='my-4' />
@@ -40,7 +40,7 @@ const ContactPage = () => {
             id='iconic'
             href='mailto:dragonslairjerky@gmail.com'
           >
-            <FaRegEnvelope className='fs-1 me-2' />
+            <FaRegEnvelope color={'darkRed'} className='fs-1 me-2' />
           </a>
           dragonslairjerky@gmail.com
         </Col>

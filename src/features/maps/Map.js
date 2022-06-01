@@ -12,6 +12,7 @@ const Map = () => {
         <br />
         <small>
           <a
+            className='link-color'
             target='_blank'
             href='https://www.openstreetmap.org/?mlat=30.09686&amp;mlon=-95.61550#map=17/30.09686/-95.61550&amp;layers=N'
           >

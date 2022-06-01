@@ -12,7 +12,7 @@ const VendorPage = () => {
       <h1 className='secondCard mb-3'>Become a Vendor</h1>
       <Row className="align-items-center">
         <Col>
-          <img className='featuredImage' src={redDragonImg} width="100%"/>
+          <img className='featuredImage' alt='Dragon Breathing Fire' src={redDragonImg} width="100%"/>
         </Col>
         <Col>
         <DragonLogoText />

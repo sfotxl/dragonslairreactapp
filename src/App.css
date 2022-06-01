@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Germania+One&display=swap');
 
+:root {
+    --bottom-of-page-out-bg-color: #3f474f;
+}
+
+body {
+    background-color: var(--bottom-of-page-out-bg-color);
+}
+
 .App {
   text-align: center;
 }
@@ -9,11 +17,25 @@ h2,
 h3,
 h4,
 h5 {
+<<<<<<< HEAD
+=======
   font-family: 'Aladin', cursive;
   text-align: center;
   color: darkred;
 }
 
+.navbar-brand {
+    overflow: hidden;
+}
+
+.nav-link, .footer-title, .footer-links {
+>>>>>>> 387a8059a0c79da50dea3e090814bddb14dc3976
+  font-family: 'Aladin', cursive;
+  text-align: center;
+  color: darkred;
+}
+
+<<<<<<< HEAD
 .nav-link, .footer-title, .footer-links {
   font-family: 'Aladin', cursive;
   text-align: center;
@@ -23,6 +45,22 @@ h5 {
 /* Icon Colors */
 i {
   color: darkred;
+=======
+/* Icon Colors */
+i, .react-icons {
+  color: darkred;
+}
+
+/* links */
+.link-color {
+    color: rgb(200, 0, 0);
+    text-decoration: none;
+}
+
+.link-color:hover {
+    color: darkred;
+    text-decoration: none;
+>>>>>>> 387a8059a0c79da50dea3e090814bddb14dc3976
 }
 
 .footer-title {
@@ -34,10 +72,11 @@ i {
 }
 
 .site-footer {
-  background-image: linear-gradient(black, slategrey);
+  background-image: linear-gradient(#212529, var(--bottom-of-page-out-bg-color));
   padding: 20px 0;
   margin-top: 5rem;
 }
+
 
 .footer-links {
   color: goldenrod;
@@ -67,4 +106,19 @@ i {
 .fourthCard {
   background-color: #ff7500;
   color: white;
+}
+
+/* Scroll down hides header, up shows header */
+#site-header {
+    position: fixed;
+    background: #fff;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all .3s ease;
+    box-shadow: 0 1px 25px rgba(0,0,0, .1);
+}
+
+#site-header.hide {
+    top: clamp(-200px, -50%, -250px);
 }

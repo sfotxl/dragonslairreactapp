@@ -108,7 +108,7 @@ const ContactForm = () => {
               id='form-radio-group'
               className='d-flex align-items-center justify-content-center'
             >
-                <label className='px-2'>
+              <label className='px-2'>
                 <Field
                   type='radio'
                   id='pickup'
@@ -126,7 +126,6 @@ const ContactForm = () => {
                 />{' '}
                 Delivery <em>(Montgomery County Only)</em>
               </label>
-              
             </Col>
           </FormGroup>
 

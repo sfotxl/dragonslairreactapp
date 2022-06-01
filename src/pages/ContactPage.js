@@ -1,19 +1,19 @@
-import { Container, Row, Col } from 'reactstrap';
-import SubHeader from '../components/SubHeader';
-import ContactForm from '../components/ContactForm';
-import Map from "../features/maps/Map";
-import { FaPhone, FaRegEnvelope, FaDragon } from 'react-icons/fa';
+import { FaDragon, FaPhone, FaRegEnvelope } from 'react-icons/fa'
+import { Col, Container, Row } from 'reactstrap'
+import ContactForm from '../components/ContactForm'
+import SubHeader from '../components/SubHeader'
+import Map from "../features/maps/Map"
 
 const ContactPage = () => {
   return (
     <Container>
       <SubHeader current='Contact' />
-      <h1 className='text-center text-white mb-3 fourthCard'>Contact Us</h1>
+      <h1 className='text-center text-white fourthCard'>Contact Us</h1>
       <hr />
       <Row className='p-4 fs-5'>
         <Col className='p-4 text-start' md='4'>
           <h5 className='text-start fs-3'>
-            <FaDragon className='mx-2 mb-1 fs-4'/> Our Address
+            <FaDragon className='mx-2 mb-1 fs-4' /> Our Address
           </h5>
           <address className='pb-4'>
             1234 Dragons Lair Boulevard
@@ -30,17 +30,19 @@ const ContactPage = () => {
             id='iconic'
             href='tel:+13109489318'
           >
-            <FaPhone className='fs-1 me-2'/>
-          </a>1-310-948-9318
-          <br className='my-4'/>
+            <FaPhone className='fs-1 me-2' />
+          </a>
+          1-310-948-9318
+          <br className='my-4' />
           <a
             role='button'
             class='btn btn-link'
             id='iconic'
             href='mailto:dragonslairjerky@gmail.com'
           >
-            <FaRegEnvelope className='fs-1 me-2'/>
-          </a>dragonslairjerky@gmail.com
+            <FaRegEnvelope className='fs-1 me-2' />
+          </a>
+          dragonslairjerky@gmail.com
         </Col>
       </Row>
       <Row>
@@ -50,8 +52,8 @@ const ContactPage = () => {
         </Col>
       </Row>
       <ContactForm />
-      <hr/>
-      <Map/>
+      <hr />
+      <Map />
     </Container>
   );
 };

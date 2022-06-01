@@ -1,8 +1,8 @@
-import { Container, Row, Col } from "reactstrap";
-import ProductCard from "../features/goods/ProductCard";
-import { selectCategories } from "../shared/productSlice";
-import Sizzle from "../assets/img/Jerky.mp4";
-import Map from "../features/maps/Map";
+import { Col, Container, Row } from "reactstrap"
+import Sizzle from "../assets/img/Jerky.mp4"
+import ProductCard from "../features/goods/ProductCard"
+import Map from "../features/maps/Map"
+import { selectCategories } from "../shared/productSlice"
 
 
 
@@ -16,7 +16,7 @@ const HomePage = () => {
       <Row className='mb-4'>
         {productCategories.map((category) => {
           return (
-            <Col md={4} className='p2'>
+            <Col md={4} className='p2 mb-4'>
               <ProductCard product={category} />
             </Col>
           );

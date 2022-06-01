@@ -1,6 +1,17 @@
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
-import { FaDrumstickBite } from 'react-icons/fa';
+import {
+  FaDrumstickBite,
+  FaHome,
+  FaAddressCard,
+  FaHeartbeat,
+  FaAddressBook,
+  FaFacebookF,
+  FaPhone,
+  FaRegEnvelope
+} from 'react-icons/fa';
+import { MdAttachMoney } from 'react-icons/md';
+import { AiFillInstagram } from 'react-icons/ai';
 
 const Footer = () => {
   return (
@@ -8,7 +19,7 @@ const Footer = () => {
       <Container>
         <Row className='mt-3'>
           <Col
-            className='footer-links text-center'
+            className='link-warning text-center'
             sm={{
               offset: 1,
               size: '5'
@@ -22,18 +33,18 @@ const Footer = () => {
                     className='text-decoration-none  p-1 d-flex align-items-center justify-content-center justify-content-center'
                     to='/'
                   >
-                    <i className='fa fa-home fa-lg px-1' />
-                    <span className='footer-links px-1'>Home</span>
+                    <FaHome size='32' className='react-icons px-1' />
+                    <span className='link-warning px-1'>Home</span>
                   </Link>
                 </Col>
 
                 <Col className='p-2' md='4' sm='6' xs='6'>
                   <Link
-                    className='text-decoration-none  p-1 d-flex align-items-center justify-content-center'
+                    className='text-decoration-none p-1 d-flex align-items-center justify-content-center'
                     to='/about'
                   >
-                    <i className='fa fa-address-card fa-lg px-1' />
-                    <span className='footer-links px-1'>About</span>
+                    <FaAddressCard size='32' className='react-icons px-1' />
+                    <span className='link-warning px-1'>About</span>
                   </Link>
                 </Col>
                 <Col className='p-2' md='4' sm='6' xs='6'>
@@ -41,10 +52,8 @@ const Footer = () => {
                     className='text-decoration-none  p-1 d-flex align-items-center justify-content-center'
                     to='/products'
                   >
-                    <i className='fa fa-lg px-1'>
-                      <FaDrumstickBite />
-                    </i>
-                    <span className='footer-links px-1'>Products</span>
+                    <FaDrumstickBite size='32' className='react-icons px-1' />
+                    <span className='link-warning px-1'>Products</span>
                   </Link>
                 </Col>
                 <Col className='p-2' md='4' sm='6' xs='6'>
@@ -52,8 +61,8 @@ const Footer = () => {
                     className='text-decoration-none  p-1 d-flex align-items-center justify-content-center'
                     to='/health'
                   >
-                    <i className='fa fa-heartbeat fa-lg px-1' />
-                    <span className='footer-links px-1'>Health</span>
+                    <FaHeartbeat size='32' className='react-icons px-1' />
+                    <span className='link-warning px-1'>Health</span>
                   </Link>
                 </Col>
                 <Col className='p-2' md='4' sm='6' xs='6'>
@@ -61,8 +70,8 @@ const Footer = () => {
                     className='text-decoration-none  p-1 d-flex align-items-center justify-content-center'
                     to='/vendor'
                   >
-                    <i className='fa fa-usd fa-lg px-1' />
-                    <span className='footer-links px-1'>Vendor Info</span>
+                    <MdAttachMoney size='32' className='react-icons' />
+                    <span className='link-warning'>Vendor Info</span>
                   </Link>
                 </Col>
                 <Col className='p-2' md='4' sm='6' xs='6'>
@@ -70,8 +79,8 @@ const Footer = () => {
                     className='text-decoration-none  p-1 d-flex align-items-center justify-content-center'
                     to='/contact'
                   >
-                    <i className='fa fa-address-book fa-lg' />
-                    <span className='footer-links px-1'>Contact Us</span>
+                    <FaAddressBook size='32' className='react-icons p-1' />
+                    <span className='link-warning px-1'>Contact Us</span>
                   </Link>
                 </Col>
               </Row>
@@ -81,16 +90,16 @@ const Footer = () => {
             <h5 className='pt-sm-0 pt-4'>Social</h5>
             <a
               className='btn btn-social-icon btn-instagram'
-              href='http://instagram.com/'
+              href='https://www.instagram.com/robbailey1952/'
             >
-              <i className='fa fa-instagram footer-links' />
-            </a>{' '}
+              <AiFillInstagram size='40' className='link-warning px-1' />
+            </a>
             <a
               className='btn btn-social-icon btn-facebook'
-              href='http://www.facebook.com/'
+              href='https://www.facebook.com/dragonslairjerkyandsmokedsalmon/'
             >
-              <i className='fa fa-facebook footer-links' />
-            </a>{' '}
+              <FaFacebookF size='28' className='link-warning px-1' />
+            </a>
           </Col>
           <Col className='footer-contact' sm='3'>
             <h5 className='pt-sm-0 pt-4'>Contact</h5>
@@ -99,15 +108,17 @@ const Footer = () => {
                 className='text-decoration-none text-nowrap'
                 href='tel:+12065551234'
               >
-                <i className='fa fa-phone px-2' />
-                <span className='footer-links px-1'>1-206-555-1234</span>
+                <FaPhone size='32' className='react-icons px-2' />
+                <span className='link-warning px-1'>(206) 555-1234</span>
               </a>
               <a
                 className='text-decoration-none text-nowrap'
-                href='mailto:notreal@notreal.co'
+                href='mailto:dragonslairjerky@gmail.com'
               >
-                <i className='fa fa-envelope-o px-2' />
-                <span className='footer-links px-1'>emailhere@gmail.com</span>
+                <FaRegEnvelope size='32' className='react-icons px-2' />
+                <span className='link-warning px-1'>
+                  dragonslairjerky@gmail.com
+                </span>
               </a>
             </section>
           </Col>

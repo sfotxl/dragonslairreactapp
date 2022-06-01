@@ -3,6 +3,7 @@ import SubHeader from '../components/SubHeader';
 import Map from '../features/maps/Map';
 import { ReactComponent as DragonLogoText } from '../assets/img/dragonslairlogo.svg';
 import redDragonImg from '../assets/img/redDragon.jpg';
+import { FaPhone, FaRegEnvelope } from 'react-icons/fa'
 
 const VendorPage = () => {
   return (
@@ -22,10 +23,10 @@ const VendorPage = () => {
             phone.
           </p>
           <a href='mailto:dragonslairjerky@gmail.com'>
-            <i class='fa-solid fa-envelope fa-large'></i>
+            <FaRegEnvelope className=' fs-2 mx-4'/>
           </a>
           <a href='tel:+13109489318'>
-            <i class='fa-solid fa-phone'></i>
+            <FaPhone className=' fs-2 mx-4'/>
           </a>
         </Col>
       </Row>

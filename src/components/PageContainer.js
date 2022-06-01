@@ -10,6 +10,8 @@ import Footer from './Footer';
 const PageContainer = ({ children }) => {
   const [headerHeight, setHeaderHeight] = useState(0);
   const [footerHeight, setFooterHeight] = useState(0);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const headerRef = useRef(null);
   const footerRef = useRef(null);
   const innerNavBarRef = useRef(null);
@@ -56,6 +58,7 @@ const PageContainer = ({ children }) => {
 
       if (direction !== prevDirection) {
         toggleHeader(direction, curScroll);
+        setMenuOpen(false);
       }
 
       prevScroll = curScroll;
@@ -91,7 +94,7 @@ const PageContainer = ({ children }) => {
       <div style={{ height: headerHeight }} />
 
       <div ref={headerRef} className='wrapper'>
-        <Header />
+        <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </div>
       <main
         className='w-100 mx-auto d-flex flex-column my-3'

@@ -1,8 +1,8 @@
-import { Container, Row, Col } from "reactstrap";
-import ProductCard from "../features/goods/ProductCard";
-import { selectCategories } from "../shared/productSlice";
-import Sizzle from "../assets/img/Jerky.mp4";
-import Map from "../features/maps/Map";
+import { Col, Container, Row } from "reactstrap"
+import Sizzle from "../assets/img/Jerky.mp4"
+import ProductCard from "../features/goods/ProductCard"
+import Map from "../features/maps/Map"
+import { selectCategories } from "../shared/productSlice"
 
 
 

@@ -1,8 +1,8 @@
-import { Container, Row, Col } from 'reactstrap';
-import SubHeader from '../components/SubHeader';
-import ContactForm from '../components/ContactForm';
-import { FaPhone, FaRegEnvelope, FaDragon } from 'react-icons/fa';
-import Map from '../features/maps/Map';
+import { FaDragon, FaPhone, FaRegEnvelope } from 'react-icons/fa'
+import { Col, Container, Row } from 'reactstrap'
+import ContactForm from '../components/ContactForm'
+import SubHeader from '../components/SubHeader'
+import Map from "../features/maps/Map"
 
 const ContactPage = () => {
   return (

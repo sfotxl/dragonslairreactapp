@@ -1,38 +1,39 @@
 // import { useState } from "react";
-import { NavLink } from 'react-router-dom';
-import { ReactComponent as DragonLogoText } from '../assets/img/dragonslairlogo.svg';
-import DragonLogo from '../assets/img/logo.jpg';
-import {
-  Navbar,
-  NavbarBrand,
-  Collapse,
-  NavbarToggler,
-  Nav,
-  NavItem
-} from 'reactstrap';
 import { useState } from 'react';
 import {
-  FaDrumstickBite,
-  FaHome,
-  FaAddressCard,
-  FaHeartbeat,
   FaAddressBook,
-  FaFacebookF,
-  FaPhone,
-  FaRegEnvelope
+  FaAddressCard,
+  FaDrumstickBite,
+  FaHeartbeat
 } from 'react-icons/fa';
-import { MdAttachMoney } from 'react-icons/md';
-import { AiFillInstagram } from 'react-icons/ai';
+import { NavLink } from 'react-router-dom';
+import {
+  Collapse,
+  Nav,
+  Navbar,
+  NavbarBrand,
+  NavbarToggler,
+  NavItem
+} from 'reactstrap';
+import { ReactComponent as DragonLogoText } from '../assets/img/dragonslairlogo.svg';
+import DragonLogo from '../assets/img/logo.jpg';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <Navbar className='navbar' dark sticky='top' expand='md' color='dark'>
+    <Navbar
+      className='navbar'
+      id='site-header'
+      dark
+      sticky='top'
+      expand='md'
+      color='dark'
+    >
       <NavbarBrand href='/' xs='3' md='5' className='ms-5'>
         <div id='BrandLogoContainer'>
           <img src={DragonLogo} id='DragonLogoImg' alt='DragonLogoImg' />
-          <div class='svg-container'>
+          <div className='svg-container'>
             <DragonLogoText id='DragonLogoText' />
           </div>
         </div>

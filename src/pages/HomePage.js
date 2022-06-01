@@ -16,7 +16,7 @@ const HomePage = () => {
       <Row className='mb-4'>
         {productCategories.map((category) => {
           return (
-            <Col md={4} className='p2 mb-4'>
+            <Col md={4} className='p2 mb-4' key={category.id}>
               <ProductCard product={category} />
             </Col>
           );

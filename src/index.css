@@ -13,8 +13,8 @@ code {
 }
 
 #form-radio-group {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 /* START Dragon's Lair Logo styling */
@@ -67,8 +67,19 @@ code {
 }
 
 @media (max-width: 450px) {
-    #BrandLogoContainer {
-      transform: scale(0.55) translateX(-40%);
-    }
+  #BrandLogoContainer {
+    transform: scale(0.55) translateX(-40%);
   }
+}
 /* END Dragon's Lair Logo styling */
+/* 
+.wrapper {
+  display: flex;
+  height: max-content;
+}
+
+.wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+} */

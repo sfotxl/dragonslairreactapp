@@ -16,9 +16,9 @@ const ProductPage = () => {
   return (
     <Container>
       <SubHeader current='Products' />
-      <Row>
-        <h1 className='firstCard'>Our Products</h1>
-        <hr />
+
+        <h1 className='firstCard mb-3'>Our Products</h1>
+        <Row>
         {productCategories.map((category) => {
           return (
             <Col md={4} className='p2'>

@@ -1,19 +1,16 @@
-import { Card, CardImg, CardText, CardBody, Col } from "reactstrap";
-
+import { Card, CardBody, CardImg, CardText } from 'reactstrap';
 
 const ProductDetail = ({ product }) => {
     const {image, name, description } = product;
 
-    return(
-        <Col md='5' className='m-1'>
-            <Card>
-                <CardImg top src={image} alt={name} /> 
-                <CardBody>
-                    <CardText>{description}</CardText>
-                </CardBody>
-            </Card>
-        </Col>
-    )
+  return (
+    <Card className='text-dark m-1'>
+      <CardImg top src={image} alt={name} />
+      <CardBody>
+        <CardText>{description}</CardText>
+      </CardBody>
+    </Card>
+  );
 };
 
 export default ProductDetail;

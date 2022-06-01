@@ -17,8 +17,6 @@ h2,
 h3,
 h4,
 h5 {
-<<<<<<< HEAD
-=======
   font-family: 'Aladin', cursive;
   text-align: center;
   color: darkred;
@@ -29,23 +27,11 @@ h5 {
 }
 
 .nav-link, .footer-title, .footer-links {
->>>>>>> 387a8059a0c79da50dea3e090814bddb14dc3976
   font-family: 'Aladin', cursive;
   text-align: center;
   color: darkred;
 }
 
-<<<<<<< HEAD
-.nav-link, .footer-title, .footer-links {
-  font-family: 'Aladin', cursive;
-  text-align: center;
-  color: darkred;
-}
-
-/* Icon Colors */
-i {
-  color: darkred;
-=======
 /* Icon Colors */
 i, .react-icons {
   color: darkred;
@@ -60,7 +46,6 @@ i, .react-icons {
 .link-color:hover {
     color: darkred;
     text-decoration: none;
->>>>>>> 387a8059a0c79da50dea3e090814bddb14dc3976
 }
 
 .footer-title {

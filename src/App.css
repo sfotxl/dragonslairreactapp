@@ -14,6 +14,10 @@ h5 {
   color: darkred;
 }
 
+.navbar-brand {
+    overflow: hidden;
+}
+
 .nav-link, .footer-title, .footer-links {
   font-family: 'Aladin', cursive;
   text-align: center;

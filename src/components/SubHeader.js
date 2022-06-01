@@ -7,7 +7,7 @@ const SubHeader = ({ current, detail }) => {
       <Col>
         <Breadcrumb>
           <BreadcrumbItem>
-            <Link to="/">Home</Link>
+            <Link to="/" className="link-light text-decoration-none">Home</Link>
           </BreadcrumbItem>
           {detail === "Products" && (
             <BreadcrumbItem>
@@ -19,7 +19,7 @@ const SubHeader = ({ current, detail }) => {
               <Link to="/Contact">Contact</Link>
             </BreadcrumbItem>
           )}
-          <BreadcrumbItem active>{current}</BreadcrumbItem>
+          <BreadcrumbItem active className="text-light">{current}</BreadcrumbItem>
         </Breadcrumb>
         <hr />
       </Col>

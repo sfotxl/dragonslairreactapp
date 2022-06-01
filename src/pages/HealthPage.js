@@ -7,8 +7,7 @@ const HealthPage = () => {
   return (
     <Container>
       <SubHeader current='Health' />
-      <h1 className='text-center text-white'>Your Health and Our Foods</h1>
-      <hr />
+      <h1 className='text-center text-white thirdCard mb-3'>Your Health and Our Foods</h1>
       <Row className='align-items-center'>
         <Col xs={12} xl={6}>
           <img

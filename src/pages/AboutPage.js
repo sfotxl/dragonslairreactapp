@@ -1,15 +1,15 @@
 import { Container, Col, Row } from 'reactstrap';
 import SubHeader from '../components/SubHeader';
+import Map from '../features/maps/Map';
 import HikingImg from '../assets/img/Hiking1.png';
 
 const AboutPage = () => {
   return (
     <Container>
       <SubHeader current='About' />
-      <h1 className='text-center text-white'>
+      <h1 className='text-center secondCard text-white mb-3'>
         About Dragons Lair Smoked Fine Goods
       </h1>
-      <hr />
       <Row className='align-items-center'>
         <Col xs={12} xl={6}>
           <img
@@ -31,6 +31,8 @@ const AboutPage = () => {
           </p>
         </Col>
       </Row>
+      
+      <Map/>
     </Container>
   );
 };

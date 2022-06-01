@@ -1,27 +1,18 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { PRODUCTS } from '../../shared/PRODUCTS';
+import { PRODUCTS } from "./PRODUCTS";
 
-const initialState = {
-    productsArray: PRODUCTS
+//selector for Type -- given type as argument, this function should return the products with that type from the PRODUCTS array
+export const selectProductsByType = (type) => {
+  return PRODUCTS.filter(
+    (product) => product.type === type && !product.seasonal
+  );
 };
 
-const productsSlice = createSlice({
-    name: 'products',
-    initialState
-});
-
-export const productsReducer = productsSlice.reducer;
-
-export const selectAllProducts = (state) => {
-    return state.products.productsArray;
+//selector for Top / Category of Products -- this function returns the categories of products for the Products Page
+export const selectTopProducts = () => {
+  return PRODUCTS.filter((product) => product.type === "top");
 };
 
-export const selectProductById = (id) => (state) => {
-    return state.products.productsArray.find(
-        (campsite) => campsite.id === parseInt(id)
-    );
-};
-
-export const selectFeaturedCampsite = (state) => {
-    return state.products.productsArray.find((product) => product.featured);
+//selector for Seasonal Products -- this function returns Seasonal Products only
+export const selectSeasonalProducts = () => {
+  return PRODUCTS.filter((product) => product.seasonal);
 };

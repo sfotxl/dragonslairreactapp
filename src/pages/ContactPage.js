@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'reactstrap';
 import SubHeader from '../components/SubHeader';
 import ContactForm from '../components/ContactForm';
 import { FaPhone, FaRegEnvelope, FaDragon } from 'react-icons/fa';
-import Map from "../features/maps/Map"
+import Map from '../features/maps/Map';
 
 const ContactPage = () => {
   return (
@@ -52,7 +52,7 @@ const ContactPage = () => {
         </Col>
       </Row>
       <ContactForm />
-       <hr />
+      <hr />
       <Map />
     </Container>
   );

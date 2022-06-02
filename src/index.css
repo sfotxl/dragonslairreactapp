@@ -17,14 +17,18 @@ code {
   flex-direction: row;
 }
 
-/* START Dragon's Lair Logo styling */
+.product-card-overlay {
+  background-image: linear-gradient(
+    transparent,
+    rgba(33, 37, 41, 0.5)
+  );
+}
 
-#DragonsLairLogo {
+.product-card-name {
   font-family: 'New Rocker', cursive;
   font-size: 3rem;
-  color: #880015;
-  -webkit-text-stroke: 0.06rem #ffc90e;
-  text-shadow: 0.1rem 0 0 #ffc90e;
+  color: #ffc90e; 
+  text-shadow: 0.2rem 0.1rem 0.2rem #5e000e;
 }
 
 #BrandLogoContainer {
@@ -71,15 +75,3 @@ code {
     transform: scale(0.55) translateX(-40%);
   }
 }
-/* END Dragon's Lair Logo styling */
-/* 
-.wrapper {
-  display: flex;
-  height: max-content;
-}
-
-.wrapper:after {
-  content: '';
-  display: table;
-  clear: both;
-} */

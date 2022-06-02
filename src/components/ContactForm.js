@@ -24,9 +24,7 @@ const ContactForm = () => {
         order: ''
       }}
       validationSchema={validationSchema}
-      onSubmit={(values) => {
-        console.log(values);
-      }}
+      onSubmit={handleSubmit}
     >
       {({ errors, touched }) => (
         <Form>

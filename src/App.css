@@ -52,6 +52,7 @@ i, .react-icons {
   font-size: 1.25rem;
 }
 
+
 .navbar .navbar-toggler {
   color: darkred !important;
 }
@@ -70,6 +71,17 @@ i, .react-icons {
 .featuredImage {
   border: solid 1px white;
   margin-bottom: 1rem;
+  border-radius: 15px;
+}
+
+video {
+  border-radius: 20px;
+  border: solid 1px black;
+}
+
+iframe {
+  border-radius: 15px;
+  border: 5px solid red;
 }
 
 /* Products Titles */

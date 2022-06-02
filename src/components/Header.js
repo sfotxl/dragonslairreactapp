@@ -4,7 +4,7 @@ import {
   FaDrumstickBite,
   FaHeartbeat
 } from 'react-icons/fa';
-import { NavLink, Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import {
   Collapse,
   Nav,
@@ -17,6 +17,13 @@ import { ReactComponent as DragonLogoText } from '../assets/img/dragonslairlogo.
 import DragonLogo from '../assets/img/logo.jpg';
 
 const Header = ({ menuOpen, setMenuOpen }) => {
+  // Prevents animation of nav-item clicks when hamburger isn't showing
+  const handleClick = () => {
+    const smallDevice = document.body.clientWidth < 768;
+    if (smallDevice) {
+      setMenuOpen(!menuOpen);
+    }
+  };
   return (
     <Navbar
       className='navbar'
@@ -41,42 +48,26 @@ const Header = ({ menuOpen, setMenuOpen }) => {
       <Collapse isOpen={menuOpen} navbar>
         <Nav className='ms-auto' navbar>
           <NavItem>
-            <NavLink
-              className='nav-link'
-              to='/about'
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
+            <NavLink className='nav-link' to='/about' onClick={handleClick}>
               <FaAddressCard size='28' className='react-icons px-1' /> About
             </NavLink>
           </NavItem>
 
           <NavItem>
-            <NavLink
-              className='nav-link'
-              to='/products'
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
+            <NavLink className='nav-link' to='/products' onClick={handleClick}>
               <FaDrumstickBite size='28' className='react-icons px-1' />
               Products
             </NavLink>
           </NavItem>
 
           <NavItem>
-            <NavLink
-              className='nav-link'
-              to='/health'
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
+            <NavLink className='nav-link' to='/health' onClick={handleClick}>
               <FaHeartbeat size='28' className='react-icons px-1' /> Health
             </NavLink>
           </NavItem>
 
           <NavItem>
-            <NavLink
-              className='nav-link'
-              to='/contact'
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
+            <NavLink className='nav-link' to='/contact' onClick={handleClick}>
               <FaAddressBook size='24' className='react-icons px-1' /> Contact
             </NavLink>
           </NavItem>

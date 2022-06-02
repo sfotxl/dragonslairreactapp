@@ -27,7 +27,7 @@ const PageContainer = ({ children }) => {
       setHeaderHeight(innerNavBarRef.current.offsetHeight);
       setFooterHeight(footerRef.current.offsetHeight);
     };
-    // Reseizes header spacer to fill empty space for fixed header
+    // Resizes header spacer to fill empty space for fixed header
     window.addEventListener('resize', handleResize);
 
     // Scroll hides/shows header

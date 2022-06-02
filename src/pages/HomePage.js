@@ -1,8 +1,8 @@
 import { Col, Container, Row } from 'reactstrap';
 import Sizzle from '../assets/img/Jerky531.mp4';
-import ProductCard from '../features/goods/ProductCard';
+import ProductCard from '../features/products/ProductCard';
 import Map from '../features/maps/Map';
-import { selectCategories } from '../shared/productSlice';
+import { selectCategories } from '../features/products/productSlice';
 
 const HomePage = () => {
   const productCategories = selectCategories();

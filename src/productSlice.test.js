@@ -1,4 +1,4 @@
-import * as productSlice from "./shared/productSlice"
+import * as productSlice from "./features/products/productSlice"
 
 // Test for selectProductsByType returns an array containing all cheese products
 test(

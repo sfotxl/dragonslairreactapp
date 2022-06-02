@@ -1,11 +1,11 @@
 import { Row, Col, Container } from 'reactstrap';
 import SubHeader from '../components/SubHeader';
-import ProductCard from '../features/goods/ProductCard';
-import DetailedProductCard from '../features/goods/DetailedProductCard';
+import ProductCard from '../features/products/ProductCard';
+import DetailedProductCard from '../features/products/DetailedProductCard';
 import {
   selectProductsByType,
   selectCategories
-} from '../shared/productSlice.js';
+} from '../features/products/productSlice';
 import { useRef } from 'react';
 
 const ProductPage = () => {

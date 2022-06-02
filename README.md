@@ -17,3 +17,6 @@ We used [**OpenStreetMap**](https://www.openstreetmap.org) for our Map component
 We used [**React Router v6**](https://reactrouter.com/) for navigation.
 
 And we used [**Yup**](https://github.com/jquense/yup) for form validation. 
+
+## Future Features
+The project lacks a back-end, but as we progress through the bootcamp, we hope to add back-end features that handle user input. 

@@ -1,22 +1,25 @@
-import { Card, CardTitle, CardImg, CardImgOverlay } from "reactstrap";
-import { Link } from 'react-router-dom';
+import { Card, CardTitle, CardImg, CardImgOverlay } from 'reactstrap';
 
-const ProductCard = ({ product }) => {
-    const { id, name, image } = product;
-    return(
-        <Link to ={`${id}`}>
-            <Card>
-                <CardImg
-                    width='100%'
-                    src={image}
-                    alt={name}
-                />
-                <CardImgOverlay>
-                    <CardTitle>{name}</CardTitle>
-                </CardImgOverlay>
-            </Card>
-        </Link>
-    )
-}
+const ProductCard = ({ product, arrRefs }) => {
+  const { name, image } = product;
+
+  return (
+    <button
+      className='btn btn-link p-1'
+      onClick={(event) => {
+        event.preventDefault();
+        arrRefs[name.toLowerCase()].current.scrollIntoView();
+      }}
+      onMouseDown={(event) => event.preventDefault()}
+    >
+      <Card>
+        <CardImg width='100%' src={image} alt={name} />
+        <CardImgOverlay className='product-card-overlay d-flex justify-content-center align-items-end'>
+          <CardTitle className='product-card-name'>{name}</CardTitle>
+        </CardImgOverlay>
+      </Card>
+    </button>
+  );
+};
 
 export default ProductCard;

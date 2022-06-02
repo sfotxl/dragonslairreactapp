@@ -26,7 +26,7 @@ const ContactPage = () => {
         <Col className='text-start p-4'>
           <a
             role='button'
-            class='btn btn-link'
+            className='btn btn-link'
             id='iconic'
             href='tel:+13109489318'
           >
@@ -36,7 +36,7 @@ const ContactPage = () => {
           <br className='my-4' />
           <a
             role='button'
-            class='btn btn-link'
+            className='btn btn-link'
             id='iconic'
             href='mailto:dragonslairjerky@gmail.com'
           >

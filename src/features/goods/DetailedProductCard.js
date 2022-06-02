@@ -1,7 +1,7 @@
 import { Card, CardBody, CardImg, CardText } from 'reactstrap';
 
 const ProductDetail = ({ product }) => {
-    const {image, name, description } = product;
+  const { image, name, description } = product;
 
   return (
     <Card className='text-dark m-1'>

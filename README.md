@@ -19,7 +19,7 @@ In implementing React, we found it easy to use Components in various places.
 
 For example, the Map Component, once created, was easy to feature on the About Page, the Contact Page, and the Home Page, whereas in the Bootstrapped website, this important piece of information (important because the business relies primarily on in-person sales at a farmers' market) was only featured on the HomePage. 
 
-Our Product Components (a simple Card and a detailed Card) were also easy to use throuhgout the site, and made future updating of new products easy. We were able to include code for seasonal products as well, which can easily be added to the current display. 
+Our Product Components (a simple Card and a detailed Card) were also easy to use throughout the site, and made future updating of new products easy. We were able to include code for seasonal products as well, which can easily be added to the current display. 
 
 ## Credits
 

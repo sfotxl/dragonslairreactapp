@@ -3,6 +3,7 @@ import Sizzle from '../assets/img/Jerky531.mp4';
 import ProductCard from '../features/products/ProductCard';
 import Map from '../features/maps/Map';
 import { selectCategories } from '../features/products/productSlice';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   const productCategories = selectCategories();
@@ -15,7 +16,9 @@ const HomePage = () => {
         {productCategories.map((category) => {
           return (
             <Col md={4} className='p2 mb-4' key={category.id}>
-              <ProductCard product={category} />
+              <Link to={{pathname: '/Products', hash: `#${category.name}`}}>
+                <ProductCard product={category} isHome={true} />
+              </Link>
             </Col>
           );
         })}

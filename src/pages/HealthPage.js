@@ -67,7 +67,7 @@ const HealthPage = () => {
           <ul>
             <li>
               <a
-                target='_blank' className="text-warning"
+                target='_blank' rel='noreferrer' className="text-warning"
                 href='https://healthyeating.sfgate.com/smoked-salmon-health-benefits-4855.html'
               >
                 Health Benefits of Smoked Salmon
@@ -76,7 +76,7 @@ const HealthPage = () => {
             </li>
             <li>
               <a
-                target='_blank' className="text-warning"
+                target='_blank' rel='noreferrer' className="text-warning"
                 href='https://www.mashed.com/146396/the-truth-about-farmed-salmon-vs-wild-salmon/'
               >
                 The Staggering difference between Wild Salmon and Farmed Salmon

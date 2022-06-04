@@ -68,6 +68,10 @@ i, .react-icons {
   color: goldenrod;
 }
 
+.card-title {
+  font-family: Aladin;
+}
+
 .featuredImage {
   border: solid 1px white;
   margin-bottom: 1rem;

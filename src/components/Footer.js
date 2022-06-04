@@ -106,7 +106,7 @@ const Footer = () => {
             <section className='d-flex flex-column align-items-center'>
               <a
                 className='text-decoration-none text-nowrap'
-                href='tel:+12065551234'
+                href='tel:+1(310)948-9318'
               >
                 <FaPhone size='32' className='react-icons px-2' />
                 <span className='link-warning px-1'>(206) 555-1234</span>

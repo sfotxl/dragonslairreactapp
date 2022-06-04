@@ -109,7 +109,7 @@ const Footer = () => {
                 href='tel:+1(310)948-9318'
               >
                 <FaPhone size='32' className='react-icons px-2' />
-                <span className='link-warning px-1'>(206) 555-1234</span>
+                <span className='link-warning px-1'>(310) 948-9318</span>
               </a>
               <a
                 className='text-decoration-none text-nowrap'

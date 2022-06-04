@@ -1,14 +1,17 @@
 import { Card, CardTitle, CardImg, CardImgOverlay } from 'reactstrap';
 
-const ProductCard = ({ product, arrRefs }) => {
+const ProductCard = ({ product, arrRefs, isHome }) => {
   const { name, image } = product;
 
   return (
     <button
       className='btn btn-link p-1'
       onClick={(event) => {
-        event.preventDefault();
-        arrRefs[name.toLowerCase()].current.scrollIntoView();
+        if (!isHome) {
+          event.preventDefault();
+          arrRefs[name.toLowerCase()].current.scrollIntoView();
+        }
+        
       }}
       onMouseDown={(event) => event.preventDefault()}
     >
@@ -20,6 +23,10 @@ const ProductCard = ({ product, arrRefs }) => {
       </Card>
     </button>
   );
+};
+
+ProductCard.defaultProps = {
+  isHome: false
 };
 
 export default ProductCard;

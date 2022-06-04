@@ -6,9 +6,11 @@ import {
   selectProductsByType,
   selectCategories
 } from '../features/products/productSlice';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const ProductPage = () => {
+  const location = useLocation();
   const productCategories = selectCategories();
   const jerkyProducts = selectProductsByType('jerky');
   const cheeseProducts = selectProductsByType('cheese');
@@ -24,6 +26,20 @@ const ProductPage = () => {
     cheese: cheeseRef,
     salmon: salmonRef
   };
+
+  useEffect(() => {
+    // Update location
+    const scrollToHash = () => {
+      if (location.hash) {
+        const params = new URLSearchParams(location.hash);
+        const hash = [...params.entries()][0][0].substring(1).toLowerCase();
+        // Get the ref
+        const hashRef = sectionRefs[hash];
+        hashRef.current.scrollIntoView()
+      }
+    };
+    scrollToHash();
+  }, []);
 
   return (
     <Container>

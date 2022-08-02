@@ -1,5 +1,5 @@
 import { Col, Container, Row } from 'reactstrap';
-import Sizzle from '../assets/img/Jerky531.mp4';
+import Sizzle from '../assets/img/Jerky531.mov';
 import ProductCard from '../features/products/ProductCard';
 import Map from '../features/maps/Map';
 import { selectCategories } from '../features/products/productSlice';
@@ -16,7 +16,7 @@ const HomePage = () => {
         {productCategories.map((category) => {
           return (
             <Col md={4} className='p2 mb-4' key={category.id}>
-              <Link to={{pathname: '/Products', hash: `#${category.name}`}}>
+              <Link to={{ pathname: '/Products', hash: `#${category.name}` }}>
                 <ProductCard product={category} isHome={true} />
               </Link>
             </Col>
